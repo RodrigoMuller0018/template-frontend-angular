@@ -27,6 +27,9 @@ updates:
         update-types: ['version-update:semver-major']
       - dependency-name: '@angular-devkit/*'
         update-types: ['version-update:semver-major']
+      # O Angular fixa a faixa do TypeScript; ela sobe junto com o `ng update`
+      - dependency-name: 'typescript'
+        update-types: ['version-update:semver-major', 'version-update:semver-minor']
     commit-message:
       prefix: 'chore(deps)'
 
